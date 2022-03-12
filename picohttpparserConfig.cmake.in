@@ -1,0 +1,13 @@
+# - Config file for the picohttpparser package
+# It defines the following variables
+#  picohttpparser_INCLUDE_DIRS - include directories for FooBar
+#  picohttpparser_LIBRARIES    - libraries to link against
+#  picohttpparser_EXECUTABLE   - the bar executable
+
+set(picohttpparser_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("${picohttpparser_DIR}/export_picohttpparser.cmake")
+
+# These are IMPORTED targets created by picohttpparserTargets.cmake
+set(picohttpparser_LIBRARIES picohttpparser)
